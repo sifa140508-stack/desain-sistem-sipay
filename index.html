@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f5f3f3",
+                        "on-tertiary-container": "#ffe3db",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "tertiary": "#972800",
+                        "surface": "#fbf9f8",
+                        "on-secondary-fixed-variant": "#474746",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#e5e8ff",
+                        "on-primary-fixed-variant": "#003ab2",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#e4e2e2",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "primary-container": "#0057ff",
+                        "primary": "#0043c8",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-background": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "on-primary-fixed": "#001550",
+                        "inverse-primary": "#b6c4ff",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e2dfde",
+                        "secondary-fixed": "#e5e2e1",
+                        "outline": "#737688",
+                        "inverse-surface": "#303031",
+                        "surface-bright": "#fbf9f8",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#004ee7",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#434656",
+                        "tertiary-container": "#c13600",
+                        "primary-fixed": "#dce1ff",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-fixed-variant": "#862300",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c3c5d9",
+                        "surface-container-high": "#e9e8e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "container_max": "1440px",
+                        "xs": "4px",
+                        "base": "4px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "sm": "8px",
+                        "nav_height": "56px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-emphasis": ["Hanken Grotesk"],
+                        "caption-link": ["Hanken Grotesk"],
+                        "button-text": ["Hanken Grotesk"],
+                        "body-main": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["16px", {"lineHeight": "20.8px", "fontWeight": "700"}],
+                        "body-emphasis": ["16px", {"lineHeight": "20.8px", "fontWeight": "600"}],
+                        "caption-link": ["12px", {"lineHeight": "15.6px", "fontWeight": "400"}],
+                        "button-text": ["14px", {"lineHeight": "14px", "fontWeight": "600"}],
+                        "body-main": ["15px", {"lineHeight": "19.5px", "fontWeight": "900"}],
+                        "headline-lg": ["20px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fbf9f8;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-emphasis overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant h-nav_height flex items-center justify-center">
+<nav class="w-full max-w-container_max px-lg flex justify-between items-center h-full">
+<div class="text-headline-lg font-headline-lg text-on-surface">
+                Google Stitch Portfolio
+            </div>
+<div class="hidden md:flex items-center gap-xl">
+<div class="flex gap-lg">
+<a class="text-primary font-body-emphasis border-b-2 border-primary pb-1 transition-colors duration-200" href="#">Work</a>
+<a class="text-on-secondary-container font-caption-link hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-on-secondary-container font-caption-link hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="text-on-secondary-container font-caption-link hover:text-primary transition-colors duration-200" href="#">Process</a>
+</div>
+<button class="bg-primary-container text-on-primary text-button-text font-button-text h-8 px-md rounded-full active:scale-95 transition-transform">
+                    Contact Me
+                </button>
+</div>
+<!-- Mobile Menu Placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-nav_height">
+<!-- Hero Section -->
+<section class="max-w-container_max mx-auto px-lg py-xl mt-xl flex flex-col items-center text-center">
+<h1 class="text-[48px] md:text-[64px] leading-[1.1] font-body-main text-on-background max-w-4xl tracking-tight mb-xl">
+                Crafting Digital Experiences at Google Stitch
+            </h1>
+<p class="text-on-secondary-container font-body-emphasis text-[18px] md:text-[20px] max-w-2xl mb-xl">
+                A minimalist, content-first approach to interface design that prioritizes clarity, performance, and user-centric narratives in the modern digital landscape.
+            </p>
+<div class="flex gap-md">
+<button class="bg-[#0057FF] text-white h-8 px-lg rounded-full text-button-text font-button-text active:scale-95 transition-transform">
+                    View My Work
+                </button>
+<button class="bg-[#F5F8FF] text-[#0057FF] h-8 px-lg rounded-full text-button-text font-button-text active:scale-95 transition-transform">
+                    Read Case Studies
+                </button>
+</div>
+</section>
+<!-- Project Grid -->
+<section class="max-w-container_max mx-auto px-lg py-xl mb-xl">
+<div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-lg">
+<!-- Project Card 1 -->
+<div class="col-span-2 md:col-span-3 lg:col-span-6 group cursor-pointer border border-[#E8E8E8] rounded-lg bg-surface-container-lowest overflow-hidden hover:border-[#D00D00] transition-colors duration-200 shadow-[0px_1px_3px_rgba(0,0,0,0.08)]">
+<div class="aspect-video w-full overflow-hidden bg-surface-container">
+<img alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, minimalist high-fidelity UI design for a professional analytics dashboard. The interface uses a crisp white background with primary blue accents, featuring elegant line charts and data visualizations. The lighting is bright and even, evoking a sense of clarity and modern technological efficiency, perfectly aligned with a professional creative portfolio aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm5Q6zBXnImUe8xFyFyX4vHc5flpXSrpf9hx94iaSQOaWcMG0WmoRxHjzJ4UteYiGZizWJDXG4UE5UsCvTlHhPstykCuT_6VgHUqGIbGfccBhZ6q65WrnjEz11xj0MIV7NqKEfWdzHHgmqeK26kVBVIOUnhjL0nGG_hLCToCU99QpUDs76fdRP_7O_L8Eb6_b8bjAN6_WzHxjqaiMTQ7q-emAVaT5QXbQdnoIqHR0VIUZ2_QlS9-kAFjLPjE0AXIXOd8SApVJcRbeL"/>
+</div>
+<div class="p-lg">
+<div class="flex gap-xs mb-md">
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">UX Design</span>
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">Research</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-sm">AI-Driven Design Tool</h2>
+<a class="text-[#0057FF] text-[12px] font-button-text underline-offset-4 hover:underline" href="#">View Project</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="col-span-2 md:col-span-3 lg:col-span-6 group cursor-pointer border border-[#E8E8E8] rounded-lg bg-surface-container-lowest overflow-hidden hover:border-[#D00D00] transition-colors duration-200 shadow-[0px_1px_3px_rgba(0,0,0,0.08)]">
+<div class="aspect-video w-full overflow-hidden bg-surface-container">
+<img alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sophisticated mobile application interface displayed on a high-end smartphone. The design features expansive whitespace, bold Hanken Grotesk typography, and a refined color palette of whites and soft grays with vibrant blue touchpoints. The scene is shot with a shallow depth of field in a brightly lit, professional studio setting that emphasizes premium digital craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjpf9u94z2kM5c9oD_h3azEavNVK2XM9ASsa0RDArSqOfWRaYi9eu9N36_IdZBc7BbEcy33WRriTklHhDi03M01eiico5zDiyCQIPj42Gy9GFqWGuWYNq3Pf4eEMQhbRL-C8palnVQjFJB5Ahy8aj2NQF2Q6z_a2sDvmjP0Y4zHu8kb8BVq5QSHuJvFubsOHJW7URNwGLu8vXDgBpbcp2BHLtKe6YsD6LkXmoe14vlDMH0c1d_vuciom3e5hcEpGiGm40HcBfU3ds2"/>
+</div>
+<div class="p-lg">
+<div class="flex gap-xs mb-md">
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">Mobile App</span>
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">Prototyping</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-sm">Global E-commerce Hub</h2>
+<a class="text-[#0057FF] text-[12px] font-button-text underline-offset-4 hover:underline" href="#">View Project</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="col-span-2 md:col-span-3 lg:col-span-6 group cursor-pointer border border-[#E8E8E8] rounded-lg bg-surface-container-lowest overflow-hidden hover:border-[#D00D00] transition-colors duration-200 shadow-[0px_1px_3px_rgba(0,0,0,0.08)]">
+<div class="aspect-video w-full overflow-hidden bg-surface-container">
+<img alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A macro shot of a sleek brand identity system including business cards and a digital tablet. The branding uses a minimalist typographic approach with a signature primary blue. The composition is balanced and architectural, with soft shadows falling across light gray surfaces, creating a premium and authoritative professional visual language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8AxhjysgMZGDxSGJQF8SY77lwuwz1fuMn1M5T1YPJb7_oSbUoZwB6361FuWlYtk3IAE56SBqnNoYPQbtY4ZdQXl6XoF7JxjhC3BonXZvcufhcUIhhrrJuxvPsTVME2uH8ZAdQEUiF2U6x2zTGI7EKLKjz7VoF_dlnUJuJTKuhOikjPXfuIIlB17BU6cMgj4Y1lzCn43ZJSTvqVApeWR73LGwcuPVOHhI6j1Hnnq3knLtMRe61AZu8J0JMaHJEtt2QiTIn10oTAx4W"/>
+</div>
+<div class="p-lg">
+<div class="flex gap-xs mb-md">
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">Identity</span>
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">UI/UX</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-sm">Modern Fintech Identity</h2>
+<a class="text-[#0057FF] text-[12px] font-button-text underline-offset-4 hover:underline" href="#">View Project</a>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="col-span-2 md:col-span-3 lg:col-span-6 group cursor-pointer border border-[#E8E8E8] rounded-lg bg-surface-container-lowest overflow-hidden hover:border-[#D00D00] transition-colors duration-200 shadow-[0px_1px_3px_rgba(0,0,0,0.08)]">
+<div class="aspect-video w-full overflow-hidden bg-surface-container">
+<img alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, geometric abstract composition representing digital process and architectural flow. Subtle light-gray gradients interact with crisp white lines, punctuated by a single vibrant red accent. The style is ultra-minimalist and corporate-modern, reflecting a high-end design process. The lighting is diffused and professional, creating an atmosphere of sophisticated clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuACiXM2pmg-FCmxBtm585I9FfRUjc7IJNtbHOFKEzGohQN5Lg75IM--FAque8WWXJuyTt3ZuNq5f7rzkxI5uoja9z6mKLE_mj-AvwVnVkXhFr6DUs3TNJWsDxEc_7Y3pPX8P3ep-6CCCVed4Dx8hU3GRUpkaNvr6k7DdHbJURdfkbYAJFbFZXXk3gSya2oIU1H4LC_DssqZYwHhmYeVHSsHg-njDfSEesugi_SBWWUQhnLoyZzheDfF3MlokKNCMAEeh34xvh77op"/>
+</div>
+<div class="p-lg">
+<div class="flex gap-xs mb-md">
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">Product Design</span>
+<span class="px-sm py-xs bg-surface-container rounded-lg text-caption-link font-caption-link text-on-secondary-container">SaaS</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-sm">SaaS Workflow Optimizer</h2>
+<a class="text-[#0057FF] text-[12px] font-button-text underline-offset-4 hover:underline" href="#">View Project</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant bg-surface-container-lowest">
+<div class="max-w-container_max mx-auto px-lg py-xl flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="text-on-secondary-container font-caption-link text-caption-link">
+                © 2024 Google Stitch Portfolio. All rights reserved.
+            </div>
+<div class="flex items-center gap-lg">
+<a class="text-on-secondary-container font-caption-link text-caption-link hover:text-on-background transition-colors duration-200" href="#">Twitter</a>
+<a class="text-on-secondary-container font-caption-link text-caption-link hover:text-on-background transition-colors duration-200" href="#">LinkedIn</a>
+<a class="text-on-secondary-container font-caption-link text-caption-link hover:text-on-background transition-colors duration-200" href="#">Dribbble</a>
+<a class="text-on-secondary-container font-caption-link text-caption-link hover:text-on-background transition-colors duration-200" href="#">Instagram</a>
+</div>
+<div class="text-button-text font-button-text text-on-secondary-container opacity-50">
+                STITCH.P
+            </div>
+</div>
+</footer>
+</body></html>
